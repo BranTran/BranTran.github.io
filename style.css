@@ -1,3 +1,48 @@
-h2{
-display: inline;
+
+html{
+  width: 100%;
+font-family: Helvetica, Arial, sans-serif;
+}
+body{
+  width: 100%;
+  margin: auto;
+}
+#navopt{
+  width: 100%;
+  background-color: #8348ad;
+  overflow: hidden;
+}
+#navopt li{
+  list-style-type: none;
+  float:left;
+  padding: 6px;
+  border-right: solid white 1px;
+}
+#navopt li:last-child{
+  border-right: none;
+}
+li a{
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px;
+  color: white;
+
+}
+li a:visited{
+}
+
+#content{
+width: 100%;
+}
+#info{
+border-right: solid black 12px;
+}
+#news{
+  width: 20%;
+}
+#profile{
+  float: left;
+  width: 10%;
+  height: auto;
 }
