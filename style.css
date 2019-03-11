@@ -13,6 +13,7 @@ body{
   position: fixed;
   top: 0;
   width: 100vw;
+  height: auto;
 }
 #navopt li{
   font-weight: bold;
@@ -38,7 +39,6 @@ body{
   text-decoration: none;
   padding: 8px;
   transition: background-color 1s;
-  transition: color 1s;
 }
 #navopt a:active{
   background-color: white;
@@ -49,15 +49,15 @@ body{
   color: #8348ad;
 }
 #content{
-width: 100vw;
+  width: 100vw;
 }
 
 p{
-  text-indent: 2vw;
+  text-indent: 4vw;
 }
 #center_panel{
-  width: 60vw;
-border-right: solid black 2px;
+  width: 60%;
+  border-right: solid black 2px;
 }
 #side_panel{
   width: 20%;
@@ -69,3 +69,14 @@ border-right: solid black 2px;
   margin-right: auto;
   width: 30%;
   height: auto;
+}
+h1{
+  font-size: 5vh;
+}
+#footer{
+  display: block;
+  width: 100vw;
+  background-color: #a7adba;
+  position: fixed;
+  bottom: 0;
+}
