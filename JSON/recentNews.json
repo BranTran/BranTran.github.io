@@ -1,7 +1,10 @@
 {
 "date1" : {
   "date":"Spring 2018",
-  "class" : ["CISC231:Data Structures","CISC340:Computer Architeture", "CISC340:Web Development"],
-  "work": ["Research Random Thick Knots","Testing performance with GPU's through CUDA"]
+  "things":["CISC231: Data Structures","CISC340: Computer Architeture", "CISC340: Web Development","Begin Research into Random Thick Knots","Begin Research into testing performance with GPU's through CUDA"]
+},
+  "date2":{
+    "date":"Fall 2018",
+    "things":["CISC230: Object Oriented Programing,Present Research on Composite Links"]
   }
 }
