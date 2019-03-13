@@ -1,0 +1,15 @@
+{
+  "name":"Brandon Tran",
+  "contactInfo":["tran2833@stthomas.edu",
+                  "(763)-267-1320"],
+  "School":"University of St. Thomas",
+  "schoolURL":"https://stthomas.edu/",
+  "grade":"GPA: 4.0",
+
+  "work":{
+        "name":"Undergraduate Researcher",
+        "start":"Summer 2017",
+        "end": "Present",
+        "descript":"I primarily organized the vast amount of link data. Something about creating scripts that process things
+  }
+}
