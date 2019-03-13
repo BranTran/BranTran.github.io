@@ -3,8 +3,8 @@ window.onload = function(){
   var news = "https://brantran.github.io/JSON/recentNews.json";
 
   getNews(news,function(data){
-    addNews(data.data1);
-    addNews(data.data2);
+    addNews(data.date1);
+    addNews(data.date2);
   });
 //*/
 }
