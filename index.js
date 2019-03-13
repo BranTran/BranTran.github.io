@@ -1,17 +1,10 @@
 window.onload = function(){
   var list = document.getElementById("newsitems")
-  var news = "JSON/recentNews.json";
-/*
+  var news = "https://brantran.github.io/JSON/recentNews.json";
+
   getNews(news,function(data){
-    var descript = document.createElement("dt");
-    descript.innerHTML = "data.date1.date";
-    for(var i = 0; i < data.date1.class.length; i++)
-    {
-      var detail = document.createElement("dd");
-      detail.innerHTML = "data.date1.class[i]";
-      descript.appendChild(detail);
-    }//for
-    list.appendChild(descript);
+    addNews(data.data1);
+    addNews(data.data2);
   });
 //*/
 }
@@ -27,4 +20,15 @@ function getNews(news,callback){
 	}//function
 	req.open("GET",news,true);
 	req.send();
+}
+function addNews(data){
+  var descript = document.createElement("dt");
+  descript.innerHTML = data.date;
+  for(var i = 0; i < data.things.length; i++)
+  {
+    var detail = document.createElement("dd");
+    detail.innerHTML = data.things[i];
+    descript.appendChild(detail);
+  }//for
+  list.appendChild(descript);
 }
