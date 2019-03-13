@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<title>Brandon Tran's Projects</title>
-		<meta charset="utf-8"/>
-		<meta name="viewpoint" content="width=device-width, initial-scale = 1"/>
-		<link rel="stylesheet" href="style.css"/>
-	</head>
+<head>
+	<title>Brandon Tran's Projects</title>
+	<meta charset="utf-8"/>
+	<meta name="viewpoint" content="width=device-width, initial-scale = 1"/>
+	<link rel="stylesheet" href="style.css"/>
+</head>
 
-	<body> <!--onload="Init()" -->
+<body> <!--onload="Init()" -->
+	<div id="header">
+		<h1>Brandon Tran</h1>
 		<ul id="navopt">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="projects.html">Projects</a></li>
 			<li><a href="resume.html">Resume</a></li>
-			<li><h1>Brandon Tran</h1></li>
 		</ul>
+	</div>
 
-        <table>
-				<th>
-        	<h1>Game of Life</h1>
-        	<p>
-            	I am currently working as an undergraduate researcher here at St. Thomas in the Math Department. My advisor is Prof. Eric Rawdon and my research is deals with a subset of Knot Theory known as composite links. I have been working on a project since the Summer of 2017. Most of my research focuses on organizing data
-        	</p>
-        <h1>Composite Links</h1>
-        <p>
-            My weekend is spent in participating in various organizations at St. Anne &St. Joseph Hien Church in Minneapolis. I am the conductor of the children's choir, a leader in the Eucharistic Vietnamese Youth Movement (EVYM), and a teacher for the church's Sunday school program.
-        </p>
+<div id="content">
+	<table id="projects">
+		<tr>
+			<td class="thumbnail">
+				<img src="images/life.jpg" alt="Game of Life image"/>
+			</td>
+			<td>
+				<h1>Game of Life</h1>
+				<p>
+					I previous worked on a project where I model Conway's Game of Life in C.
+					</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="thumbnail">
+				<img src="images/links.jpg" alt="Composite link image"/>
+			</td>
+			<td>
+				<h1>Composite Links</h1>
+				<p>
+					My field of research deals in a subsection of Knot Theory known as composite links.
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="thumbnail">
+				<img src="images/link.jpg" alt="Composite link image"/>
+			</td>
+			<td>
+				<p>Creating something with Java</p>
 
-        <h1>Creating something with Java</h1>
-
-
-        <ul id="news">
-        </ul>
-
-	</body>
+			</td>
+		</tr>
+	</table>
+	<ul id="news">
+	</ul>
+</div>
+<div id="footer">
+	<p>Translation powered by <a href="">YanDes</a></p>
+	</div>
+</body>
 </html>

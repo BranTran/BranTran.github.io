@@ -1,37 +1,42 @@
 body{
   width: 100vw;
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
   margin: 0;
 }
-#navopt{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  padding-inline-start: 0;
-  background-color: #8348ad;
-  overflow: hidden;
+#header{
   position: fixed;
   top: 0;
-  width: 100vw;
+  font-size: 1rem;
+  width: 100%;
   height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #8348ad;
+  display: block;
+}
+#header h1{
+  position: relative;
+  float: right;
+  padding-right: 5%;
+  color: white;
+  border: solid 1px red;
+}
+#navopt{
+  background-color: #8348ad;
+  list-style-type: none;
+  overflow: hidden;
+  height: 100%;
 }
 #navopt li{
   font-weight: bold;
   display: inline;
   color: white;
-  float: right;
-  border-right: solid white 1px;
+  float: left;
+  border-left: solid white 1px;
 }
 #navopt li:first-child{
-  border-right: none;
-}
-#navopt li:last-child{
-  padding-left: .5vw;
-  float: left;
-  display: block;
-  font-size: 2rem;
-  border-right: none;
-  height: 100%;
+  border-left: none;
 }
 #navopt a{
   display: block;
@@ -48,6 +53,7 @@ body{
   background-color: white;
   color: #8348ad;
 }
+/* INDEX STYLE*/
 #content{
   width: 100vw;
 }
@@ -55,11 +61,11 @@ body{
 p{
   text-indent: 4vw;
 }
-#center_panel{
+.center_panel{
   width: 60%;
   border-right: solid black 2px;
 }
-#side_panel{
+.side_panel{
   width: 20%;
   padding: 1%;
 }
@@ -73,6 +79,22 @@ p{
 h1{
   font-size: 5vh;
 }
+
+/*END INDEX STYLE*/
+/*PROJECT STYLE*/
+table{
+  border: solid 1px black
+}
+.thumbnail{
+  padding: 5%;
+  width: 20%;
+}
+.thumbnail img{
+  width: 100%;
+  height: auto;
+  padding-left: none;
+}
+/*END PROJECT STYLE*/
 #footer{
   display: block;
   width: 100vw;

@@ -1,0 +1,7 @@
+{
+"date1" : {
+  "date":"Spring 2018",
+  "class" : ["CISC231:Data Structures","CISC340:Computer Architeture", "CISC340:Web Development"],
+  "work": ["Research Random Thick Knots","Testing performance with GPU's through CUDA"]
+  }
+}
