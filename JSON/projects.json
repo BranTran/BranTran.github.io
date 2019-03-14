@@ -1,5 +1,4 @@
-{
-  "project1": {
+  {"project1": {
     "title": "Game of Life",
     "description": "I previous worked on a project where I model Conway's Game of Life in C.",
     "thumbnail": "images/life.JPG",
