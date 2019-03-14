@@ -1,16 +1,19 @@
 window.onload = function(){
-  var resume = "https://brantran.github.io/JSON/resume.json";
+  var projects = "https://brantran.github.io/JSON/projects.json";
   var anchor = document.getElementById("resumeContent");
-  getResume(resume,showResume(data,anchor));
+  getProjects(projects,function(data){
+    showResume(data,anchor);
+  });
 //*/
 }
 
-function getResume(url,callback){
+function getProjects(url,callback){
   var req = new XMLHttpRequest();
 	req.onreadystatechange = function(){
 		if(req.readyState == 4 && req.status == 200)
 		{
 			var data = JSON.parse(req.response);
+      console.log(data);
 			callback(data);
 		}//if
 	}//function
@@ -19,11 +22,15 @@ function getResume(url,callback){
 }
 function showResume(data,anchor)
 {
-//Append Contacts
+//  console.log(data);
+    /*
 
-//Education
-//Work
-//Leadership
-//Skills
-
+    h3
+    p
+    table
+    table td
+    table img
+    .table_link
+    .table_link:hover
+    */
 }

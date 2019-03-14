@@ -1,6 +1,6 @@
 body{
   width: 100%;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Times New Roman", serif;
   font-size: 62.5%;
   margin: 0;
 }
@@ -15,13 +15,6 @@ body{
   background-color: #8348ad;
   display: inline-block;
 }
-#header h1{
-  position: relative;
-  float: right;
-  padding-right: 5%;
-  color: white;
-  border: solid 1px red;
-}
 #menu{
   background-color: #8348ad;
   color: white;
@@ -34,19 +27,23 @@ position: relative;
 display: inline-block;
 }
 #navopt{
-  display: none;
+opacity: 0;
   position: absolute;
   min-width: 10%;
   background-color: #8348ad;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  transition: opacity 1s linear;
 }
 #navopt a{
   display: block;
+  background-color: inherit;
   color: white;
   font-size: 1.5rem;
   text-decoration: none;
   padding: 8px;
+  transition: color 1s linear;
+  transition: background-color 1s linear;
 }
 #navopt a:hover{
   background-color: white;
@@ -54,20 +51,28 @@ display: inline-block;
 }
 #dropdown:hover #navopt{
   display: block;
+  opacity: 1;
 }
 #menu:hover {
   color: #8348ad;
   background-color: white;
-  font-weight: bold;
 }
-/* INDEX STYLE*/
+#footer{
+  display: block;
+  width: 100%;
+  background-color: #a7adba;
+}
+#footer p{
+  color: black;
+  display: inline;
+}
 #content{
   width: 100%;
   z-index: -1;
   display: block;
   height: 80%;
 }
-
+/* INDEX STYLE*/
 p{
   text-indent: 4%;
   font-size: 1rem;
@@ -88,22 +93,64 @@ p{
   height: auto;
 }
 h1{
-  font-size: 5vh;
+  font-size: 1.75rem;
+}
+ul{
+  font-size: 1.25rem;
+  padding-left: 0;
+}
+ul li{
+  list-style-type: none;
+  font-weight: bold;
+  text-decoration: underline;
+  padding-bottom: 2vh;
+
+}
+ul li ul li{
+  padding-left: 1vw;
+  text-decoration: none;
+  list-style-position: inside;
+  list-style-type: square;
+  font-size: .8rem;
+  font-weight:normal;
+  padding-bottom: 1vh;
 }
 
 /*END INDEX STYLE*/
 /*PROJECT STYLE*/
-.thumbnail{
-  width: 100%;
-  height: auto;
+h3{
+	font-size: 1.3rem;
+}
+p{
+	font-size: 1rem;
+}
+table{
+  text-align: left;
+  display: block;
+  border-spacing: 10px;
+	width: 80vw;
+	margin: auto;
+}
+table td{
+	padding: 5px;
+	width: 24%
+	height: 40rem;
+	background: white;
+}
+table img{
+	background: white;
+	width: 100%;
+	height: auto;
+}
+.table_link{
+	padding: 10px;
+	max-height: 10vw;
+	min-height:10vw;
+	background: #ffffff;
+}
+.table_link:hover{
+	background: #1A92B7;
+	color: #fff;
 }
 /*END PROJECT STYLE*/
-#footer{
-  display: block;
-  width: 100%;
-  background-color: #a7adba;
-}
-#footer p{
-  color: black;
-  display: inline;
-}
+/*RESUME STYLE*/

@@ -1,10 +1,10 @@
 window.onload = function(){
-  var list = document.getElementById("newsitems")
+  var list = document.getElementById("newsitems");
   var news = "https://brantran.github.io/JSON/recentNews.json";
 
   getNews(news,function(data){
-    addNews(data.date1);
-    addNews(data.date2);
+    addNews(data.date1,list);
+    addNews(data.date2,list);
   });
 //*/
 }
@@ -21,14 +21,16 @@ function getNews(news,callback){
 	req.open("GET",news,true);
 	req.send();
 }
-function addNews(data){
-  var descript = document.createElement("dt");
-  descript.innerHTML = data.date;
+function addNews(data,parent){
+  var semester = document.createElement("li");
+  semester.textContent = data.date;
+  var innerlist = document.createElement("ul");
   for(var i = 0; i < data.things.length; i++)
   {
-    var detail = document.createElement("dd");
-    detail.innerHTML = data.things[i];
-    descript.appendChild(detail);
+    var detail = document.createElement("li");
+    detail.textContent = data.things[i];
+    innerlist.appendChild(detail);
   }//for
-  list.appendChild(descript);
+  semester.appendChild(innerlist);
+  parent.appendChild(semester);
 }
