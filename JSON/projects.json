@@ -1,41 +1,9 @@
 {
-  "project1":{
+  "project1" : {
     "title": "Game of Life",
     "description":"I previous worked on a project where I model Conway's Game of Life in C.",
     "thumbnail":"images/life.JPG",
     "alt":"Game of Life image",
-    "slideshow":"",
-  },
-  "project2":{
-    "title": "Composite Links",
-    "description":"My field of research deals in a subsection of Knot Theory known as composite links.",
-    "thumbnail":"images/links.JPG",
-    "alt":"Composite Links Image",
-    "slideshow":"",
-  },
-  "project3":{
-    "title": "Randon Thick Knots",
-    "description":"New research into the study of random knots that are modelled after physical knots with the addition of having thickness.",
-    "thumbnail":"",
-    "slideshow":"",
-  },
-  "project4":{
-    "title": "Word Model",
-    "description":"In CISC 230: Object Oriented Programming, I designed a model in Java for words.",
-    "thumbnail":"images/word.jpg",
-    "alt":"Scattered letters image",
-    "slideshow":"",
-  },
-  "project5":{
-    "title": "Directory Probe",
-    "description":"Using a model of a stack of queues, I created a program that can probe a given directory.",
-    "thumbnail":"",
-    "slideshow":"",
-  },
-  "project6":{
-    "title": "UST3400 Assembler",
-    "description":"Together with Leah Emerson, we constructed a program that functions as an assembler that follows similar guidelines to mips",
-    "thumbnail":"",
     "slideshow":"",
   }
 }
