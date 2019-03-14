@@ -12,6 +12,7 @@ function getProjects(url,callback){
 	req.onreadystatechange = function(){
 		if(req.readyState == 4 && req.status == 200)
 		{
+      console.log("We dwnld the data")
 			var data = JSON.parse(req.response);
       console.log(data);
 			callback(data);
