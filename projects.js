@@ -1,6 +1,6 @@
 window.onload = function(){
   var projects = "https://brantran.github.io/JSON/projects.json";
-  var anchor = document.getElementById("resumeContent");
+  var anchor = document.getElementById("gallery");
   console.log("Hello");
   getProjects(projects,function(data){
     showProjects(data,anchor);
@@ -29,11 +29,23 @@ function showProjects(data,anchor)
   var projects = data.projects;
   for(var i=0; i < projects.length;i++)
   {
+    if(i%3==0)
+    {
+      var row = document.createElement("tr");
+      anchor.appendChild(row);
+    }
+      var block = document.createElement("td");
 //    console.log("What do we have here"+i);
-//    var names = ;
-  console.log(projects.title);
+      var title = document.createElement("h3");
+      title.textContent = projects[i].title;
+      block.appendChild(title);
+      var img = document.createElement("img");
+      img.src=projects[i].thumbnail;
+      img.alt=projects[i].alt;
+      block.appendChild(img);
+      row.appendChild(block);
+//      console.log(projects[i].title);
 
-//    console.log(data.(Object.keys(data)[i]).title);
   }
 //  console.log(data);
     /*
