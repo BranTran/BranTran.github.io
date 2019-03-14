@@ -5,42 +5,42 @@
       "description": "I previous worked on a project where I model Conway's Game of Life in C.",
       "thumbnail": "images/life.JPG",
       "alt": "Game of Life image",
-      "slideshow": ""
+      "slideshow": "images/life.JPG"
     },
     {
       "title": "Composite Links",
       "description": "My field of research deals in a subsection of Knot Theory known as composite links.",
       "thumbnail": "images/links.JPG",
       "alt": "Composite Links Image",
-      "slideshow": ""
+      "slideshow": "images/links.JPG"
     },
     {
       "title": "Randon Thick Knots",
       "description": "New research into the study of random knots that are modelled after physical knots with the addition of having thickness.",
       "thumbnail": "images/randknot.JPG",
       "alt":"Random Thick Knot image",
-      "slideshow": ""
+      "slideshow": "images/randknot.JPG"
     },
     {
       "title": "Word Model",
       "description": "In CISC 230: Object Oriented Programming, I designed a model in Java for words.",
       "thumbnail": "images/word.jpg",
       "alt": "Scattered letters image",
-      "slideshow": ""
+      "slideshow": "images/word.jpg"
     },
     {
       "title": "Directory Probe",
       "description": "Using a model of a stack of queues, I created a program that can probe a given directory.",
       "thumbnail": "images/tree.png",
       "alt": "Directory Tree image",
-      "slideshow": ""
+      "slideshow": "images/tree.png"
     },
     {
       "title": "UST3400 Assembler",
       "description": "Together with Leah Emerson, we constructed a program that functions as an assembler that follows similar guidelines to mips",
       "thumbnail": "images/assembler.jpg",
       "alt":"Assembler image",
-      "slideshow": ""
+      "slideshow": "images/assembler.jpg"
     }
   ]
 }

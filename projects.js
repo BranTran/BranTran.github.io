@@ -42,6 +42,12 @@ function showProjects(data,anchor)
       var img = document.createElement("img");
       img.src=projects[i].thumbnail;
       img.alt=projects[i].alt;
+      img.class="thumbnail";
+
+      var lightimg = document.createElement("img");
+      lightimg.src=projects.slideshow;
+      lightimg.alt=projects.alt;
+      img.onclick = openBox(lightimg);
       block.appendChild(img);
       row.appendChild(block);
 //      console.log(projects[i].title);
@@ -58,4 +64,13 @@ function showProjects(data,anchor)
     .table_link
     .table_link:hover
     */
+}
+
+
+function openBox(id){
+  document.getElementById(id).style.visibility = visible;
+  document.getElementById("lightbox").style.visibility = visible;
+}
+function closeBox(id){
+  document.getElementById(id).style.visibility = hidden;
 }

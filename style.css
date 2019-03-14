@@ -3,6 +3,7 @@ body{
   font-family: "Times New Roman", serif;
   font-size: 62.5%;
   margin: 0;
+  background-color: #eeeeee;
 }
 #menu{
   background-color: #8348ad;
@@ -107,7 +108,11 @@ ul li ul li{
 
 /*END INDEX STYLE*/
 /*PROJECT STYLE*/
+.thumbnail{
+  width = 100%;
+}
 h3{
+  vertical-align: top;
 	font-size: 1.3rem;
 }
 p{
@@ -121,25 +126,20 @@ table{
 	margin: auto;
 }
 table td{
-	padding: 5px;
-	width: 24%
-	height: 40rem;
+  padding: 0;
+	width: 24%;
 	background: white;
 }
 table img{
 	background: white;
 	width: 100%;
 	height: auto;
+  cursor: grab;
 }
-.table_link{
-	padding: 10px;
-	max-height: 10vw;
-	min-height:10vw;
-	background: #ffffff;
-}
-.table_link:hover{
-	background: #1A92B7;
-	color: #fff;
+#lightbox{
+  visibility: hidden;/**/
+  background-color: rgba(0,0,0,0.2);
+  z-index: -1;
 }
 /*END PROJECT STYLE*/
 /*RESUME STYLE*/
