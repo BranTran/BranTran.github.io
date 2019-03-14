@@ -1,11 +1,11 @@
 body{
-  width: 100vw;
+  width: 100%;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 62.5%;
   margin: 0;
 }
 #header{
-  position: fixed;
+  position: relative;
   top: 0;
   font-size: 1rem;
   width: 100%;
@@ -13,7 +13,7 @@ body{
   margin: 0;
   padding: 0;
   background-color: #8348ad;
-  display: block;
+  display: inline-block;
 }
 #header h1{
   position: relative;
@@ -22,44 +22,55 @@ body{
   color: white;
   border: solid 1px red;
 }
-#navopt{
+#menu{
   background-color: #8348ad;
-  list-style-type: none;
-  overflow: hidden;
-  height: 100%;
-}
-#navopt li{
-  font-weight: bold;
-  display: inline;
   color: white;
-  float: left;
-  border-left: solid white 1px;
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
 }
-#navopt li:first-child{
-  border-left: none;
+#dropdown{
+position: relative;
+display: inline-block;
+}
+#navopt{
+  display: none;
+  position: absolute;
+  min-width: 10%;
+  background-color: #8348ad;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 #navopt a{
   display: block;
   color: white;
+  font-size: 1.5rem;
   text-decoration: none;
   padding: 8px;
-  transition: background-color 1s;
-}
-#navopt a:active{
-  background-color: white;
-  color: #8348ad;
 }
 #navopt a:hover{
   background-color: white;
   color: #8348ad;
 }
+#dropdown:hover #navopt{
+  display: block;
+}
+#menu:hover {
+  color: #8348ad;
+  background-color: white;
+  font-weight: bold;
+}
 /* INDEX STYLE*/
 #content{
-  width: 100vw;
+  width: 100%;
+  z-index: -1;
+  display: block;
+  height: 80%;
 }
 
 p{
-  text-indent: 4vw;
+  text-indent: 4%;
+  font-size: 1rem;
 }
 .center_panel{
   width: 60%;
@@ -82,23 +93,17 @@ h1{
 
 /*END INDEX STYLE*/
 /*PROJECT STYLE*/
-table{
-  border: solid 1px black
-}
 .thumbnail{
-  padding: 5%;
-  width: 20%;
-}
-.thumbnail img{
   width: 100%;
   height: auto;
-  padding-left: none;
 }
 /*END PROJECT STYLE*/
 #footer{
   display: block;
-  width: 100vw;
+  width: 100%;
   background-color: #a7adba;
-  position: fixed;
-  bottom: 0;
+}
+#footer p{
+  color: black;
+  display: inline;
 }

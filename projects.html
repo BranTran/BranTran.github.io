@@ -9,20 +9,18 @@
 </head>
 
 <body> <!--onload="Init()" -->
-	<div id="header">
-		<h1>Brandon Tran</h1>
-		<ul id="navopt">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="resume.html">Resume</a></li>
-		</ul>
+	<div id="dropdown">
+		<button type="button" id="menu">Menu</button>
+		<div id="navopt">
+			<a href="index.html">Home</a>
+			<a href="projects.html">Projects</a>
+			<a href="resume.html">Resume</a>
+		</div>
 	</div>
-
 <div id="content">
 	<table id="projects">
 		<tr>
-			<td class="thumbnail">
-				<img src="images/life.jpg" alt="Game of Life image"/>
+			<td class="side_panel">
 			</td>
 			<td>
 				<h1>Game of Life</h1>
@@ -30,10 +28,12 @@
 					I previous worked on a project where I model Conway's Game of Life in C.
 					</p>
 			</td>
+			<td class="side_panel">
+				<img src="images/life.JPG" alt="Game of Life image" class="thumbnail"/>
+			</td>
 		</tr>
 		<tr>
-			<td class="thumbnail">
-				<img src="images/links.jpg" alt="Composite link image"/>
+			<td class="side_panel">
 			</td>
 			<td>
 				<h1>Composite Links</h1>
@@ -41,15 +41,23 @@
 					My field of research deals in a subsection of Knot Theory known as composite links.
 				</p>
 			</td>
+			<td class="side_panel">
+				<img src="images/links.JPG" alt="Composite link image" class="thumbnail"/>
+			</td>
+
 		</tr>
 		<tr>
-			<td class="thumbnail">
-				<img src="images/link.jpg" alt="Composite link image"/>
+			<td class="side_panel">
 			</td>
 			<td>
-				<p>Creating something with Java</p>
+				<h1>Word Model</h1>
+				<p>In CISC 230: Object Oriented Programming, I designed a model in Java for words.</p>
 
 			</td>
+			<td class="side_panel">
+				<img src="images/word.jpg" alt="Scattered letters image" class="thumbnail"/>
+			</td>
+
 		</tr>
 	</table>
 	<ul id="news">
