@@ -26,12 +26,13 @@ function getProjects(url,callback){
 function showProjects(data,anchor)
 {
   console.log("Inside the show");
-  var projects = Object.keys(data);
+  var projects = data.projects;
   for(var i=0; i < projects.length;i++)
   {
 //    console.log("What do we have here"+i);
 //    var names = ;
-  console.log(projects[i]);
+  console.log(projects.title);
+
 //    console.log(data.(Object.keys(data)[i]).title);
   }
 //  console.log(data);
