@@ -137,9 +137,14 @@ table img{
   cursor: grab;
 }
 #lightbox{
-  visibility: hidden;/**/
+  opacity: 0;/**/
   background-color: rgba(0,0,0,0.2);
-  z-index: -1;
+  z-index: 1;
+}
+#picture{
+  width: 70vw;
+  height: auto;
+  opacity: 0;
 }
 /*END PROJECT STYLE*/
 /*RESUME STYLE*/
