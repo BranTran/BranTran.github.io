@@ -1,4 +1,8 @@
+<<<<<<< HEAD
   {"project1": {
+=======
+  "project1": {
+>>>>>>> 44b3d445b3e5c9858f2439f312342e8c623fa637
     "title": "Game of Life",
     "description": "I previous worked on a project where I model Conway's Game of Life in C.",
     "thumbnail": "images/life.JPG",
@@ -37,4 +41,3 @@
     "thumbnail": "",
     "slideshow": ""
   }
-}
