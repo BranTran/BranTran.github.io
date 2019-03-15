@@ -2,17 +2,15 @@
   "name":"Brandon Tran",
   "contact_info":["tran2833@stthomas.edu",
                   "(763)-267-1320"],
-  "education":{"School":"University of St. Thomas",
+    "school":"University of St. Thomas",
   "schoolURL":"https://stthomas.edu/",
   "grade":"GPA: 4.0",
-  "course_work":["CISC 230: Object Oriented Programming","MATH 128: Discrete Math","STAT 220: Statistics I"]
-},
-  "work":{
-        "name":"Undergraduate Researcher",
-        "start":"Summer 2017",
-        "end": "Present",
-        "descript":"I primarily organized the vast amount of link data. Something about creating scripts that process things"
-  },
+  "course_work":["CISC 230: Object Oriented Programming","MATH 128: Discrete Math","STAT 220: Statistics I"],
+
+  "work1_name":"Undergraduate Researcher",
+  "work1_start":"Summer 2017",
+  "work1_end": "Present",
+  "work1_descript":"I primarily organized the vast amount of link data. Something about creating scripts that process things",
   "leader":["Conductor of Children's choir","Leader in Vietnamese Eucharistic Youth Movement","Teacher at Sunday school"],
   "skills":["Java","C","Perl","Microsoft Office"]
 }
