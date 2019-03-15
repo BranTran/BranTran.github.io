@@ -27,8 +27,8 @@ function showResume(data,anchor)
   createTextElement(anchor,"h2",data.contact_info[1],"phone","basic-info");
   var edu = myCreate(anchor,"div","block");
   var schoollink = myCreate(edu,"a",undefined, "href",data.schoolURL);
+  createTextElement(edu,"h2",data.school_date,undefined,"date");
   createTextElement(edu,"h4","Education");
-  createTextElement(edu,"h2",data.school_start+"-"+data.school_end,undefined,"date");
   createTextElement(schoollink,"h5",data.school,"school");
   createTextElement(edu,"h5",data.grade);
   createTextElement(edu,"h5","Course work");
@@ -39,14 +39,15 @@ function showResume(data,anchor)
   }
   var work1 = myCreate(anchor,"div","block");
   createTextElement(work1,"h4","Work Experience")
+  createTextElement(work1,"h2",data.work1_date,undefined,"date");
   createTextElement(work1,"h5",data.work1_name,"work");
-  createTextElement(work1,"h2",data.work1_start+"-"+data.work1_end,undefined,"date");
 
   var lead = myCreate(anchor, "div","block");
   createTextElement(lead,"h4","Leadership Positions");
   var leadpost = myCreate(lead,"ul","leader");
   for(var i = 0; i<data.leader.length;i++)
   {
+    createTextElement(leadpost,"h2",data.leader_date[i],undefined,"date");
     createTextElement(leadpost,"li",data.leader[i],"exp"+i);
   }
   var skill = myCreate(anchor,"div","block")
@@ -57,15 +58,6 @@ function showResume(data,anchor)
     createTextElement(skills,"li",data.skills[i],"exp"+i);
   }
 //*/
-
-
-//Append Contacts
-
-//Education
-//Work
-//Leadership
-//Skills
-
 }
 function createTextElement(parent, type, content, id, classname){
   //console.log(content);

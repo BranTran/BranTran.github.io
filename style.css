@@ -56,8 +56,11 @@ opacity: 0;
   position: absolute;
 }
 #footer p{
-  color: black;
   display: inline;
+}
+#translate{
+  float: right;
+  margin-right: 5%;
 }
 .content{
   width: 90%;
@@ -157,7 +160,7 @@ table img{
 }
 .lightbox_img{
   display: none;
-  width: 70vw;
+  width: 100%;
   height: auto;
 }
 /*END PROJECT STYLE*/
@@ -183,6 +186,9 @@ h4{
 h5{
   font-size: 1.25rem;
 }
+.date{
+  float:right;
+}
 .block{
   margin-bottom:2rem;
 }
@@ -191,4 +197,7 @@ h5{
   list-style-position: inside;
   font-weight: normal;
   font-size: 1rem;
+}
+h2{
+  font-size:1rem;
 }

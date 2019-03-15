@@ -1,7 +1,7 @@
 window.onload = function(){
   var projects = "https://brantran.github.io/JSON/projects.json";
   var anchor = document.getElementById("gallery");
-  console.log("Hello");
+//  console.log("Hello");
   getProjects(projects,function(data){
     showProjects(data,anchor);
   });
@@ -9,14 +9,14 @@ window.onload = function(){
 }
 
 function getProjects(url,callback){
-  console.log("Into the function")
+//  console.log("Into the request function")
   var req = new XMLHttpRequest();
 	req.onreadystatechange = function(){
 		if(req.readyState == 4 && req.status == 200)
 		{
-      console.log("We dwnld the data");
+//      console.log("We dwnld the data");
 			var data = JSON.parse(req.response);
-      console.log(data);
+//      console.log(data);
 			callback(data);
 		}//if
 	}//function
@@ -25,7 +25,7 @@ function getProjects(url,callback){
 }
 function showProjects(data,anchor)
 {
-  console.log("Inside the show");
+  //console.log("Inside the showProjects");
   var projects = data.projects;
   var lightbox = document.getElementById("lightbox_content");
   for(var i=0; i < projects.length;i++)
@@ -43,44 +43,49 @@ function showProjects(data,anchor)
       var img = document.createElement("img");
       img.src=projects[i].thumbnail;
       img.alt=projects[i].alt;
-      img.class="thumbnail";
+      img.className="thumbnail";
 ///*
       var lightimg = document.createElement("img");
       lightimg.src=projects[i].slideshow;
       var name = projects[i].title;
+      var div = document.createElement("div");
+      div.className = "lightbox_img";
       lightimg.id = name.replace(/\s+/g, '-');
-      lightimg.class = "lightbox_img";
-      lightbox.appendChild(lightimg);
+      div.appendChild(lightimg);
   //    console.log(projects[i].title)
       //*/
-      img.onclick = function(){openBox(lightimg);};
+      //console.log(img.alt+" "+lightimg.id+i);
+      img.addEventListener("click",function(){
+        openBox();
+        console.log(i);
+        showImg(i);
+      });
+  block.appendChild(img);
+  row.appendChild(block);
+  lightbox.appendChild(div);
+  }//for each
 
-//      console.log(projects[i].title);
-
-
-block.appendChild(img);
-row.appendChild(block);
-  }
   document.getElementById("lightbox").appendChild(lightbox);
-}
+}//function showProjects
 
 
-function openBox(img){
+function openBox(){
   document.getElementById("lightbox").style.display = "block";
   var images = document.getElementsByClassName("lightbox_img");
-  for(var i= 0; i < images.length; i++)
+/*  for(var i= 0; i < images.length; i++)
   {
-    if(images.id != img.id)
+    if(images[i].id == img.id)
     {
-      document.getElementById(img.id).style.display = "none";
+     document.getElementById(img.id).style.display = "block";
+      //    images[i].style.display = "none";
     }
-//    images[i].style.display = "none";
-  }
-  console.log(img+" "+img.id);
-  console.log("It is visible");
+  }//*/
+  console.log(images);
+//  console.log("It is visible");
 }
 function closeBox(){
   var images = document.getElementsByClassName("lightbox_img");
+//  console.log(images);
   for(var i= 0; i < images.length; i++)
   {
     images[i].style.display = "none";
@@ -88,4 +93,18 @@ function closeBox(){
   document.getElementById("lightbox").style.display = "none";
   console.log("we closed it");
   //document.getElementById(id).style.visibility = hidden;
+}
+function showImg(n)
+{
+  var images = document.getElementsByClassName("lightbox_img");
+
+  console.log(n+" "+images[n]);
+  for(var i = 0; i<images.length;i++);
+  {
+    if(n == i)
+    {
+//      images[i].style.display = "block";
+    }
+
+  }
 }
