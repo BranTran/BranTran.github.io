@@ -27,7 +27,7 @@ function showProjects(data,anchor)
 {
   console.log("Inside the show");
   var projects = data.projects;
-  var lightbox = document.getElementById("lightbox");
+  var lightbox = document.getElementById("lightbox_content");
   for(var i=0; i < projects.length;i++)
   {
     if(i%3==0)
@@ -47,33 +47,45 @@ function showProjects(data,anchor)
 ///*
       var lightimg = document.createElement("img");
       lightimg.src=projects[i].slideshow;
-      lightimg.alt=projects[i].alt;
-      lightimg.id=projects[i].title;
+      var name = projects[i].title;
+      lightimg.id = name.replace(/\s+/g, '-');
       lightimg.class = "lightbox_img";
-//      lightbox.appendChild(lightimg);
+      lightbox.appendChild(lightimg);
   //    console.log(projects[i].title)
       //*/
-      img.onclick = function(){openBox(lightimg.id,lightimg.src)};
-      block.appendChild(img);
-      row.appendChild(block);
+      img.onclick = function(){openBox(lightimg);};
+
 //      console.log(projects[i].title);
 
+
+block.appendChild(img);
+row.appendChild(block);
   }
-  anchor.appendChild(lightbox);
+  document.getElementById("lightbox").appendChild(lightbox);
 }
 
 
-function openBox(id,img){
-  //document.getElementById(id).style.opacity = 1;
-  //console.log(id+" "+img);
-  document.getElementById("lightbox").style.opacity = 1;
-  document.getElementById("picture").style.opacity = 1;  
-  document.getElementById("picture").src = img;
+function openBox(img){
+  document.getElementById("lightbox").style.display = "block";
+  var images = document.getElementsByClassName("lightbox_img");
+  for(var i= 0; i < images.length; i++)
+  {
+    if(images.id != img.id)
+    {
+      document.getElementById(img.id).style.display = "none";
+    }
+//    images[i].style.display = "none";
+  }
+  console.log(img+" "+img.id);
   console.log("It is visible");
 }
 function closeBox(){
-  document.getElementById(id).style.opacity = 0;
-  document.getElementById("lightbox").style.opacity = 0;
+  var images = document.getElementsByClassName("lightbox_img");
+  for(var i= 0; i < images.length; i++)
+  {
+    images[i].style.display = "none";
+  }
+  document.getElementById("lightbox").style.display = "none";
   console.log("we closed it");
   //document.getElementById(id).style.visibility = hidden;
 }
