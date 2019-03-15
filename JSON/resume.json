@@ -6,12 +6,11 @@
   "schoolURL":"https://stthomas.edu/",
   "grade":"GPA: 4.0",
   "course_work":["CISC 230: Object Oriented Programming","MATH 128: Discrete Math","STAT 220: Statistics I"],
-  "school_start":"Fall 2016",
-  "school_end":"Present",
+  "school_date":"Fall 2016 - Present",
   "work1_name":"Undergraduate Researcher",
-  "work1_start":"Summer 2017",
-  "work1_end": "Present",
+  "work1_date":"Summer 2017 - Present",
   "work1_descript":"I primarily organized the vast amount of link data. Something about creating scripts that process things",
-  "leader":["Conductor of Children's choir","Leader in Vietnamese Eucharistic Youth Movement","Teacher at Sunday school"],
+  "leader":["Conductor of Children's choir","Teacher at Sunday school","Leader in Vietnamese Eucharistic Youth Movement"],
+  "leader_date":["Fall 2016 - Present","Fall 2016 - Present","Fall 2017 - Present"],
   "skills":["Java","C","Perl","Microsoft Office"]
 }
