@@ -26,7 +26,7 @@ app.controller("empty", function($scope){
 });
 app.controller("angular", function($scope) {
 	$scope.name = "AngularJS";
-	$scope.if = "ng-if";
+	$scope.if = "N/A";
 	$scope.list = "ng-repeat";
 	$scope.things = ["https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js",
 	"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js",
@@ -36,5 +36,5 @@ app.controller("vue", function($scope) {
 	$scope.name = "vue";
 	$scope.if = "v-if";
 	$scope.list = "v-for";
-	$scope.things = "";
+	$scope.things = ["https://cdn.jsdelivr.net/npm/vue","script.js"];
 });

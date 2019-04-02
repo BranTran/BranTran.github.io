@@ -16,16 +16,6 @@ input {
     margin: 1rem;
 }
 
-select {
-    width: 10%;
-    min-width: 8rem;
-    font-size: 1.2rem;
-    margin: 1rem;
-}
-
-option {
-    font-size: 1.2rem;
-}
 
 button {
     font-size: 1.2rem;
@@ -36,9 +26,9 @@ button {
 li {
     font-size: 1.2rem;
 }
-.indent{
-	position: relative;
-	left: 10;
+
+.navbar{
+	width: 20%;
 }
 p{
 	font-size: 1.2rem;
@@ -48,8 +38,12 @@ a{
   font-size: 1.2rem;
   color: blue;
 }
+
 #app {
     width: 80%;
     height: 100%;
     background-color: #CACACA;
+}
+table{
+  width: 100%;
 }
