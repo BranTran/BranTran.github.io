@@ -8,8 +8,8 @@ app.config(function($routeProvider){
 	})
 	.when("/angular", {
 		//templateUrl: "framwork.htm",
-		//templateUrl: "main.htm",
-		template: "<h1>There is something here</h1><p><bo dy></p><p>{{msg}}</p><p>end body</p>",
+		templateUrl: "main.htm",
+		//template: "<h1>There is something here</h1><p><bo dy></p><p>{{msg}}</p><p>end body</p>",
 		controller: "angular"
 	})
 	.when("/vue", {
@@ -20,13 +20,19 @@ app.config(function($routeProvider){
 	})
 	.otherwise("/!");
 });
-	
+
 app.controller("empty", function($scope){
-	$scope.msg = "something";
+	$scope.name = "HTML";
+	$scope.if = "N/A";
+	$scope.list = "N/A";
 });
 app.controller("angular", function($scope) {
-	$scope.msg = "ng-repeat";
+	$scope.name = "AngularJS";
+	$scope.if = "ng-if";
+	$scope.list = "N/A";
 });
 app.controller("vue", function($scope) {
-	$scope.msg = "v-for";
+	$scope.name = "vue";
+	$scope.if = "v-if";
+	$scope.list = "v-for";
 });
