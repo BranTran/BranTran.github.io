@@ -3,27 +3,27 @@ app.config(function($routeProvider){
 	$routeProvider
 	.when("/!", {
 		templateUrl: "https://brantran.github.io/oral_prez/main.htm",
-		controller: "empty"
+//		controller: "empty"
 	})
 	.when("/angular", {
 		//templateUrl: "framwork.htm",
-		templateUrl: "https://brantran.github.io/oral_prez/main.htm",
+		templateUrl: "https://brantran.github.io/oral_prez/framework.htm",
 		controller: "angular"
 	})
 	.when("/vue", {
 		//templateUrl: "framework.htm"
-		templateUrl: "https://brantran.github.io/oral_prez/main.htm",
+		templateUrl: "https://brantran.github.io/oral_prez/framework.htm",
 		controller: "vue"
 	})
 	.otherwise("/!");
 });
 
-app.controller("empty", function($scope){
+/*app.controller("empty", function($scope){
 	$scope.name = "HTML";
 	$scope.if = "N/A";
 	$scope.list = "N/A";
 	$scope.things = ["javascript.js"];
-});
+});*/
 app.controller("angular", function($scope) {
 	$scope.name = "AngularJS";
 	$scope.if = "N/A";
