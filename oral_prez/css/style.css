@@ -31,7 +31,8 @@ li {
 	width: 20%;
 }
 p{
-	font-size: 1.2rem;
+  font-weight: bold;
+	font-size: 2rem;
 }
 a{
   text-decoration: none;
@@ -54,4 +55,15 @@ table{
 
 table, td{
   border: solid 1px black;
+}
+#footer{
+  width: 100%;
+  background-color: gray;
+  position: fixed;
+  bottom: 0;
+}
+.leftbar{
+  padding: 0 2rem;
+  border-right: solid 1px;
+  border-color: inherit;
 }
