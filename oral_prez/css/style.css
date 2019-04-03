@@ -24,7 +24,8 @@ button {
 }
 
 li {
-    font-size: 1.2rem;
+    font-size: 1.75rem;
+    font-weight: bold;
 }
 
 .navbar{
@@ -55,6 +56,9 @@ table{
 
 table, td{
   border: solid 1px black;
+}
+td{
+  text-align: center;
 }
 #footer{
   width: 100%;
