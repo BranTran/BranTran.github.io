@@ -3,7 +3,7 @@ app.config(function($routeProvider){
 	$routeProvider
 	.when("/!", {
 		template:"<h1>Welcome to the AngularJS Route Template!</h1><h1>I am the ng-view that changes</h1><h1>This template is not a separate .htm. It's just hardcoded into app.js</h1>"
-	}
+	})
 	.when("/template",{
 		templateUrl: "https://brantran.github.io/oral_prez/main.htm",
 //		controller: "empty"
