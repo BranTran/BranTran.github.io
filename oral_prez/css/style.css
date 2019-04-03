@@ -23,6 +23,22 @@ button {
     margin: 1rem;
 }
 
+h1{
+  font-size: 2.5rem;
+}
+h2{
+  font-size: 2rem;
+}
+p{
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+a{
+  text-decoration: none;
+  font-size: 2rem;
+  color: blue;
+}
 li {
     font-size: 1.75rem;
     font-weight: bold;
@@ -30,15 +46,6 @@ li {
 
 .navbar{
 	width: 20%;
-}
-p{
-  font-weight: bold;
-	font-size: 2rem;
-}
-a{
-  text-decoration: none;
-  font-size: 2rem;
-  color: blue;
 }
 
 #app {
@@ -57,9 +64,6 @@ table{
 table, td{
   border: solid 1px black;
 }
-td{
-  text-align: center;
-}
 #footer{
   width: 100%;
   background-color: gray;
@@ -70,4 +74,7 @@ td{
   padding: 0 2rem;
   border-right: solid 1px;
   border-color: inherit;
+}
+.left-align{
+  text-align:left;
 }
