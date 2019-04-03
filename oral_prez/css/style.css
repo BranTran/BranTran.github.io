@@ -64,6 +64,9 @@ table{
 table, td{
   border: solid 1px black;
 }
+td{
+  text-align: center;
+}
 #footer{
   width: 100%;
   background-color: gray;
